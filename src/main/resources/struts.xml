@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+   "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+   "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="default" extends="struts-default">
+		<result-types>
+	        <result-type name="json" class="org.apache.struts2.json.JSONResult"/>
+	    </result-types>
+	    
+		<action name="createuser" class="com.kit.pulse.actions.CreateUserAction">
+			<result type="json">
+				<param name="includeProperties">
+					response.*
+				</param>
+			</result>
+		</action>
+		
+		<action name="savepatientdetails" class="com.kit.pulse.actions.SavePatientDetailsAction">
+			<result type="json">
+				<param name="includeProperties">
+					response.*
+				</param>
+			</result>
+		</action>
+		
+		<action name="userlogin" class="com.kit.pulse.actions.UserLoginAction">
+			<result type="json">
+				<param name="includeProperties">
+					response.*
+				</param>
+			</result>
+		</action>
+		
+		<action name="logpulserate" class="com.kit.pulse.actions.LogPulseRateAction">
+			<result type="json">
+				<param name="includeProperties">
+					response.*
+				</param>
+			</result>
+		</action>
+		
+		<action name="updatefirebasetoken" class="com.kit.pulse.actions.UpdateFirebaseTokenAction">
+			<result type="json">
+				<param name="includeProperties">
+					response.*
+				</param>
+			</result>
+		</action>
+		
+		<action name="savepulseratedata" class="com.kit.pulse.actions.SavePulseRateDataAction">
+			<result type="json">
+				<param name="includeProperties">
+					response.*
+				</param>
+			</result>
+		</action>
+		
+		<action name="getpulseratedata" class="com.kit.pulse.actions.GetPulseRateDataAction">
+			<result type="json">
+				<param name="includeProperties">
+					response.*
+				</param>
+			</result>
+		</action>
+		
+		<action name="addpatients" class="com.kit.pulse.actions.AddPatientsAction">
+			<result type="json">
+				<param name="includeProperties">
+					response.*
+				</param>
+			</result>
+		</action>
+		
+		<action name="getemergencydata" class="com.kit.pulse.actions.GetEmergencyDataAction">
+			<result type="json">
+				<param name="includeProperties">
+					response.*
+				</param>
+			</result>
+		</action>
+		
+		<action name="getnormalrestingheartrate" class="com.kit.pulse.actions.GetNormalRestingHeartRateAction">
+			<result type="json">
+				<param name="includeProperties">
+					response.*
+				</param>
+			</result>
+		</action>
+		
+		<action name="getpatientlisttoobserve" class="com.kit.pulse.actions.GetPatientListToObserveAction">
+			<result type="json">
+				<param name="includeProperties">
+					response.*
+				</param>
+			</result>
+		</action>
+		
+		<action name="getpatientlisttoobservecaretaker" class="com.kit.pulse.actions.GetPatientListToObserveCareTakerAction">
+			<result type="json">
+				<param name="includeProperties">
+					response.*
+				</param>
+			</result>
+		</action>
+		
+	</package>
+</struts>
